@@ -1,0 +1,20 @@
+:root {  
+    --header-color: #DB869A;
+    --menu-items-color: #681F31;
+    --title-color: #E93837;
+    --button-1-color: #DB869A;
+  }
+
+body{
+    margin: 0px;
+}
+
+.button-1{
+    background-color: var(--button-1-color);
+    border-style: none;
+    border-radius: 10px;
+    width: 277px;
+    height: 45px;
+    color: white;
+    display: block;
+}
