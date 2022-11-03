@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- aici definesti setul de caractere pe care il folosesti, de obicei utf-8 -->
+    <meta charset="UTF-8">
+    <!-- aici setezi viewport-ul ca sa fii sigur ca site-ul se scaleaza pentru toate dimensiunile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heart Clinic</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- exista un element in html pentru a defini header-ul, vezi aici https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header -->
+    <header class="site-header">
+        <!-- orice site trebuie sa aiba un container in care sa fie incadrat continutul site-ului, in cazul nostru containerul trebuie sa aiba maxim 1280px.
+        clasa m-auto o folosim ca sa centram acest container -->
+        <!-- h-100 e ca sa fii sigur ca inaltimea divului e 100% din parentul acestuia, sa poti centra elementele -->
+        <div class="container m-auto h-100">
+            <!-- asa definesti o navigatia -->
+            <nav class="main-nav">
+                <div>
+                    <!-- pe logo de obicei avem link catre homepage -->
+                    <!-- e bine sa pui si title pe unele link-uri, da bine la seo. aici scrii unde ar trebui sa duca acel link. daca tii mouse-ul putin mai mult peste link o sa vezi ca iti apare textul din title -->
+                    <a href="/" title="Heart Clinic">
+                        <!-- sa setezi width si height pe imagini si in html, chiar daca le modifici ulterior in css, ajuta foarte mult la randarea codului in browser -->
+                        <!-- pentru imaginile care nu sunt doar de decor, trebuie sa setam un alt -->
+                        <img class="logo" src="assets/images/logo.svg" width="131" height="52" alt="Logo Heart Clinic">
+                    </a>
+                </div>
+                <!-- pentru meniu de obicei se foloseste o lista neordonata -->
+                <ul class="main-menu">
+                    <li>
+                        <a href="/" title="Heart Clinic">acasa</a>
+                    </li>
+                    <li>
+                        <a href="#">medici</a>
+                    </li>
+                    <li>
+                        <a href="#">servicii</a>
+                    </li>
+                    <li>
+                        <a href="#">clinica</a>
+                    </li>
+                    <li>
+                        <a href="#">articole</a>
+                    </li>
+                    <li>
+                        <a href="#">contacte</a>
+                    </li>
+                </ul>
+                <div class="social-media-header">
+                    <!-- aici trebuie link-uri pentru social media -->
+                    <!-- width si height pentru imaginile astea care nu se modifica le scrii direct in html, nu trebuie sa adaugi clase sau id-uri  -->
+                    <a href="#">
+                        <img src="assets/images/facebook_logo.svg" alt="" width="30" height="30">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/instagram_logo.svg" alt="" width="27" height="27">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/whatsapp_logo.svg" alt="" width="30" height="30">
+                    </a>
+                    <!-- aici ce iti ziceam pentru culori sa folosim clase -->
+                    <a href="tel:0733215215" class="phone-number white">0733 215 215</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- aici e containerul global, aici va fi tot continutul paginii cu exceptia header si footer -->
+    <div class="page-container">
+        <div class="homepage-slider">
+            <div class="container m-auto">
+                <!-- fara stil inline -->
+                <h2 class="slider-subtitle red">Clinica medicilor cardiologi</h2>
+                <!-- tot ce vezi cu m- sa stii ca sunt margini -->
+                <h1 class="title red m-top-10">Arta de a vindeca</h1>
+                <p class="default-p red m-top-20">Click pe butonul de mai jos pentru o programare</p>
+                <!-- chiar daca arata ca niste butoane, majoritatea sunt link-uri -->
+                <a href="#" class="default-btn m-top-20">programează-te</a>
+                <a href="#" class="default-btn m-top-14">servicii</a>
+                <p class="default-p red m-top-35">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Sem viverra tincidunt commodo pulvinar
+                    quis
+                    massa.<br> Convallis faucibus fermentum scelerisque gravida. Nec,<br> mauris metus ultrices sodales
+                    gravida et
+                    semper. Sit a<br> viverra tincidunt in commodo laoreet condimentum<br> morbi.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

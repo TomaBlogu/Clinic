@@ -1,0 +1,5 @@
+1. Variabilelor sa le dam niste denumiri mai generale, nu dupa elementul pe care le-ai gasit
+2. Incearca ca tot ce scrii (nume de clase, id-uri, etc.) sa le scrii in engleza, e mai uzual, chiar daca uneori mai folosesti si cuvinte in romana
+3. Nu mai folosi id-uri pentru stilizare, foloseste clase
+4. In css o sa folosim Kebab Case pentru a denumi clase sau id-uri, adica scris cu - intre ele, iar pentru variabilele din js Camel Case (vezi aici https://www.freecodecamp.org/news/programming-naming-conventions-explained/)
+5. Optimizeaza imaginile cu squoosh, cum am scris in skype

@@ -1,0 +1,212 @@
+/* asa se adauga fonturile */
+@font-face {
+    font-family: "Articular";
+    src: url('../fonts/articular/ArticulatCF-Thin.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Articular";
+    src: url('../fonts/articular/ArticulatCF-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Articular";
+    src: url('../fonts/articular/ArticulatCF-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Articular";
+    src: url('../fonts/articular/ArticulatCF-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Articular";
+    src: url('../fonts/articular/ArticulatCF-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Articular";
+    src: url('../fonts/articular/ArticulatCF-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Articular";
+    src: url('../fonts/articular/ArticulatCF-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+/* aici definesti variabilele */
+:root {
+    --light-pink: #DB869A;
+    --brown: #681F31;
+    --red: #E93837;
+    --white: #fff;
+}
+
+/* aici faci un reset la toate elementele, sa nu aiba margini sau paddings, apoi setezi ca box-model border-box, cauta despre box model din css */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* aici setezi font-size-ul default pentru tot site-ul si tot odata ce font sa foloseasca site-ul */
+body {
+    font-family: 'Articular', sans-serif;
+    font-size: 16px;
+}
+
+/* pentru toate linkurile scoti text-decoration ca sa nu scrii pentru fiecare link in parte */
+a {
+    text-decoration: none;
+}
+
+/* aici te asiguri ca imaginea nu e mai mare decat continutul */
+img {
+    display: block;
+    max-width: 100%;
+}
+.page-container{
+    max-width: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+}
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header {
+    width: 100%;
+    height: 75px;
+    background-color: var(--light-pink);
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.main-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 131px;
+    height: 52px;
+}
+
+.main-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu li a {
+    display: block;
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--brown);
+}
+
+.white {
+    color: var(--white);
+}
+
+.red {
+    color: var(--red);
+}
+
+.social-media-header {
+    display: flex;
+    /* cu gap definesti spatiul dintre elemente in display flex si grid */
+    gap: 20px;
+    align-items: center;
+}
+
+.phone-number {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.homepage-slider {
+    background-image: url("../images/slider_background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
+
+.m-top-10 {
+    margin-top: 10px;
+}
+
+.m-top-20 {
+    margin-top: 20px;
+}
+
+.m-top-14 {
+    margin-top: 14px;
+}
+
+.m-top-35 {
+    margin-top: 35px;
+}
+
+.slider-subtitle {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.default-p {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.default-btn {
+    display: block;
+    width: 277px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 10px;
+    background-color: var(--light-pink);
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+}
