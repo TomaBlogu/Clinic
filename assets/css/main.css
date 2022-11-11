@@ -55,6 +55,7 @@
     --brown: #681F31;
     --red: #E93837;
     --white: #fff;
+    --light-grey: #F5F5F5;
 }
 
 /* aici faci un reset la toate elementele, sa nu aiba margini sau paddings, apoi setezi ca box-model border-box, cauta despre box model din css */
@@ -162,22 +163,64 @@ img {
     background-position: center;
     padding-top: 121px;
     padding-bottom: 121px;
+    min-height: 684px;
+}
+
+.homepage-medics{
+    min-height: 970px;
+}
+
+.homepage-servicii{
+    min-height: 1021px;
 }
 
 .m-top-10 {
     margin-top: 10px;
 }
 
-.m-top-20 {
-    margin-top: 20px;
+.m-top-11{
+    margin-top: 11px;
 }
 
 .m-top-14 {
     margin-top: 14px;
 }
 
+.m-top-19{
+    margin-top: 19px;
+}
+
+.m-top-20 {
+    margin-top: 20px;
+}
+
 .m-top-35 {
     margin-top: 35px;
+}
+
+.m-top-88{
+    margin-top: 88px;
+}
+
+.m-top-70{
+    margin-top: 70px;
+}
+
+.m-top-104{
+    margin-top: 104px;
+}
+
+.l-height-22{
+    line-height: 22px;
+}
+
+.w-400-h-470{
+    width: 400px;
+    height: 470px;
+}
+
+.b-radius-35{
+    border-radius: 35px;
 }
 
 .slider-subtitle {
@@ -210,3 +253,87 @@ img {
     font-size: 16px;
     color: var(--white);
 }
+
+.secondary-btn{
+    display: block;
+    width: 277px;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    background-color: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    color: var(--red);
+}
+
+.medics-showcase{
+    height: 822px;
+    padding-top: 39px;
+    display: flex;
+    gap: 40px;
+    background-color: var(--light-grey);
+}
+
+.medic-title{
+    font-weight: 900; 
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.servicii-title{
+    font-weight: 900; 
+    font-size: 32px;
+    line-height: 48px;
+    position: absolute;
+    width: 100%;
+}
+
+.medic-subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.servicii-showcase{
+    height: 683px;
+    display: flex;
+    gap: 40px;
+}
+
+.lista-servicii{
+    width: 400px;
+    height: 623px;
+    position: relative;
+}
+
+.light-grey-background{
+    background-color: var(--light-grey);
+}
+
+.white-rectangle{
+    width: 155px;
+    height: 155px;
+    background-color: var(--brown);
+    position: absolute;
+    left: 50%;
+    bottom: 552.8px ;
+    margin-left: -77.5px;
+    transform: rotate(45deg);
+    border-radius: 29px;
+}
+
+.z-1{
+    z-index: 1;
+}
+
+.z-2{
+    z-index: 2;
+}
+/* 
+pentru sectiunile mari trebuie height?
+object-fit: cover?
+*/
