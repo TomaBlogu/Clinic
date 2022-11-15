@@ -56,6 +56,7 @@
     --red: #E93837;
     --white: #fff;
     --light-grey: #F5F5F5;
+    --dark-grey: #4F4F4F;
 }
 
 /* aici faci un reset la toate elementele, sa nu aiba margini sau paddings, apoi setezi ca box-model border-box, cauta despre box model din css */
@@ -68,6 +69,8 @@
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
 }
+
+/* de ce inca au h1,h2 ... margini predefinite */
 
 /* aici setezi font-size-ul default pentru tot site-ul si tot odata ce font sa foloseasca site-ul */
 body {
@@ -144,6 +147,10 @@ img {
     color: var(--red);
 }
 
+.dark-grey{
+    color: var(--dark-grey);
+}
+
 .social-media-header {
     display: flex;
     /* cu gap definesti spatiul dintre elemente in display flex si grid */
@@ -174,6 +181,14 @@ img {
     min-height: 1021px;
 }
 
+.homepage-heart-clinic{
+    min-height: 1226px;
+}
+
+.homepage-articole{
+    min-height: 1216px;
+}
+
 .m-top-10 {
     margin-top: 10px;
 }
@@ -184,6 +199,10 @@ img {
 
 .m-top-14 {
     margin-top: 14px;
+}
+
+.m-top-15{
+    margin-top: 15px;
 }
 
 .m-top-19{
@@ -198,21 +217,37 @@ img {
     margin-top: 35px;
 }
 
-.m-top-88{
-    margin-top: 88px;
+.m-top-41{
+    margin-top: 41px;
+}
+
+.m-top-51{
+    margin-top: 51px;
+}
+
+.m-top-64{
+    margin-top: 64px;
+}
+
+.m-top-61{
+    margin-top: 61px;
 }
 
 .m-top-70{
     margin-top: 70px;
 }
 
+.m-top-88{
+    margin-top: 88px;
+}
+
+
+
 .m-top-104{
     margin-top: 104px;
 }
 
-.l-height-22{
-    line-height: 22px;
-}
+
 
 .w-400-h-470{
     width: 400px;
@@ -239,6 +274,14 @@ img {
     font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
+}
+
+.l-height-22{
+    line-height: 22px;
+}
+
+.l-height-30{
+    line-height: 30px;
 }
 
 .default-btn {
@@ -284,7 +327,6 @@ img {
     font-weight: 900; 
     font-size: 32px;
     line-height: 48px;
-    position: absolute;
     width: 100%;
 }
 
@@ -294,12 +336,16 @@ img {
     line-height: 30px;
 }
 
-.text-center{
-    text-align: center;
+.servicii-subtitle{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
 }
 
+
+
 .servicii-showcase{
-    height: 683px;
+    height: 623px;
     display: flex;
     gap: 40px;
 }
@@ -314,16 +360,47 @@ img {
     background-color: var(--light-grey);
 }
 
+/* pozitionare? */
+
 .white-rectangle{
     width: 155px;
     height: 155px;
-    background-color: var(--brown);
+    background-color: var(--white);
     position: absolute;
     left: 50%;
-    bottom: 552.8px ;
+    bottom: 580px ;
     margin-left: -77.5px;
     transform: rotate(45deg);
     border-radius: 29px;
+}
+
+.heart-list-icon{
+    position: absolute;
+    left: 50%;
+    margin-left: -59px;
+    bottom: 580px;
+}
+
+/* pozitionare? */
+.center-servicii-btn{
+    position: absolute;
+    left: 50%;
+    margin-left:-138.5px ;
+    bottom: 36px;
+}
+
+/* object-fit: cover? */
+.heart-booklet{
+    height: 500px;
+    width: 1280px;
+    object-fit: cover;
+}
+
+.articole-showcase{
+    width: 1280px;
+    height: 807px;
+    display: flex;
+    gap: 40px;
 }
 
 .z-1{
@@ -333,3 +410,10 @@ img {
 .z-2{
     z-index: 2;
 }
+
+.text-center{
+    text-align: center;
+}
+
+
+
